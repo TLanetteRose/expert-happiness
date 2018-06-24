@@ -1,0 +1,14 @@
+/*Colors 45eba5, 21aba5, 1d566e, 163a5f
+
+/*Set height of grid so sidenav can be 100% (adjust if needed) */
+
+.row .content {
+  height: 800px;
+}
+/* Set background color for sidenav and 100% height */
+
+.sidenav {
+  background-color: #45eba5;
+  height: 100%;
+}
+
