@@ -1,78 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sample Blog Webpage One</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Blog Webpage One</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-	<body>
 
-	<!--Begin Page-->
-		<div class="container-fluid">
-			<div class="row content">
-				<!--Begin Side Navigation-->
-				<div class="col-sm-3 sidenav">
-					<h3>Tamsin's Blog</h3>
-					<ul class="nav nav-pills nav-stacked">
-						<li class="active"><a href="#section1">Home</a></li>	
-						<li class="active"><a href="#section2">Link2</a></li>
-						<li class="active"><a href="#section3">Link3</a></li>
-						<li class="active"><a href="#section4">Link4</a></li>
-					</ul><br>
-					<div class="input-group"><input type="text" class="form-control" placeholder="Search Blog...">
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="button">
-								<span class="glyphicon glyphicon-search">
-									
-								</span>
-							</button>
-						</span>
-					</div>	
-				</div>
-				<!--End Side Navigation-->
+<body>
 
-				<!--Begin Posts section-->
-				<div class="col-sm-9">
-					<h4><small>Recent Posts</small></h4>
-					<hr>
-					<h2>Post Title 1</h2>
-					<h5><span class="glyphicon glyphicon-time"></span>Post by Janelle Doe, June 24, 2018.</h5>
-					<h5><span class="label label-danger">Beer</span><span class="label label-primary">Ipsum</span></h5>
-					<br>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod dignissim arcu ac suscipit. Aenean tincidunt egestas dolor ac pharetra. Phasellus et tempor metus. Aliquam id ultricies magna. Pellentesque id lectus consectetur, blandit arcu a, porta erat. Morbi commodo ante urna, vitae euismod eros euismod ac. Praesent vel dolor lacus. Ut dictum lacinia elit et volutpat. Morbi et consequat lacus. Praesent semper erat quis convallis elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus rhoncus, augue eget varius vulputate, elit nisi iaculis ligula, eu placerat sapien tellus at nibh. Proin dapibus auctor dui, eu fermentum mauris egestas vitae. Quisque dapibus, dolor eu rhoncus convallis, nunc metus luctus ex, sed scelerisque enim nisl eget enim. Maecenas luctus nulla rhoncus ante congue, ut aliquet leo cursus.</p>
-					<br><br>
+  <!--Begin Page-->
+  <div class="container-fluid">
+    <div class="row">
+      <!--Begin Side Navigation-->
 
-					<h4><small>Recent Posts</small></h4>
-					<hr>
-					<h2>Post Title 2</h2>
-					<h5><span class="glyphicon glyphicon-time"></span>Post by Jayden Doe, June 24, 2018.</h5>
-					<h5><span class="label label-success">Lorem</span></h5><br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod dignissim arcu ac suscipit. Aenean tincidunt egestas dolor ac pharetra. Phasellus et tempor metus. Aliquam id ultricies magna. Pellentesque id lectus consectetur, blandit arcu a, porta erat. Morbi commodo ante urna, vitae euismod eros euismod ac. Praesent vel dolor lacus. Ut dictum lacinia elit et volutpat. Morbi et consequat lacus. Praesent semper erat quis convallis elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus rhoncus, augue eget varius vulputate, elit nisi iaculis ligula, eu placerat sapien tellus at nibh. Proin dapibus auctor dui, eu fermentum mauris egestas vitae. Quisque dapibus, dolor eu rhoncus convallis, nunc metus luctus ex, sed scelerisque enim nisl eget enim. Maecenas luctus nulla rhoncus ante congue, ut aliquet leo cursus.</p>
-					<hr>
+      <!--Begin Links-->
+      <div class="col-sm-3 sidenav">
+        <h4>Tamzin's Blog</h4>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item"><a class="nav-link active text-center" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-center" href="#">Link2</a></li>
+          <li class="nav-item"><a class="nav-link text-center" href="#">Link3</a></li>
+          <li class="nav-item"><a class="nav-link text-center" href="#">Link4</a></li>
+        </ul>
+        <!--End Links-->
+        <br>
+        <!--Begin Search -->
+        <form action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search Blog.." name="text1">
+          </div>
+            
+            <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i>
+            </button>
+        </form>
+        <!--End Search-->
+      </div>
+      <!--End Side Navigation-->
 
-					<h4>Leave a Comment:</h4>
-					<form role="form">
-						<div class="form-group">
-							<textarea class="form-control" rows="3" required></textarea>
-						</div>
-						<button type="submit" class="btn btn-success">Submit</button>
-					</form>
-					<br><br>
-				</div>
-			</div>
-		</div>
-		
+      <!--Begin Posts section-->
+      <div class="col-sm-9">
+        <h4><small>Recent Posts</small></h4>
+        <hr>
+        <h2>Post Title 1</h2>
+        <h5><span class="glyphicon glyphicon-time"></span>Post by Janelle Doe, June 24, 2018.</h5>
+        <h5><span class="label label-danger">Beer</span><span class="label label-primary">Ipsum</span></h5>
+        <br>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod dignissim arcu ac suscipit. Aenean tincidunt egestas dolor ac pharetra. Phasellus et tempor metus. Aliquam id ultricies magna. Pellentesque id lectus consectetur, blandit
+          arcu a, porta erat. Morbi commodo ante urna, vitae euismod eros euismod ac. Praesent vel dolor lacus. Ut dictum lacinia elit et volutpat. Morbi et consequat lacus. Praesent semper erat quis convallis elementum. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas. Vivamus rhoncus, augue eget varius vulputate, elit nisi iaculis ligula, eu placerat sapien tellus at nibh. Proin dapibus auctor dui, eu fermentum mauris egestas vitae. Quisque dapibus,
+          dolor eu rhoncus convallis, nunc metus luctus ex, sed scelerisque enim nisl eget enim. Maecenas luctus nulla rhoncus ante congue, ut aliquet leo cursus.</p>
+        <hr>
+         <h4>Leave a Comment:</h4>
+        <form action="/action_page.php" role="form">
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="3" cols="50" id="comment" name="text"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <br><br>
+        <h4><small>Recent Posts</small></h4>
+        <hr>
+        <h2>Post Title 2</h2>
+        <h5><span class="glyphicon glyphicon-time"></span>Post by Jayden Doe, June 24, 2018.</h5>
+        <h5><span class="label label-success">Lorem</span></h5><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod dignissim arcu ac suscipit. Aenean tincidunt egestas dolor ac pharetra. Phasellus et tempor metus. Aliquam id ultricies magna. Pellentesque id lectus consectetur, blandit
+          arcu a, porta erat. Morbi commodo ante urna, vitae euismod eros euismod ac. Praesent vel dolor lacus. Ut dictum lacinia elit et volutpat. Morbi et consequat lacus. Praesent semper erat quis convallis elementum. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas. Vivamus rhoncus, augue eget varius vulputate, elit nisi iaculis ligula, eu placerat sapien tellus at nibh. Proin dapibus auctor dui, eu fermentum mauris egestas vitae. Quisque dapibus,
+          dolor eu rhoncus convallis, nunc metus luctus ex, sed scelerisque enim nisl eget enim. Maecenas luctus nulla rhoncus ante congue, ut aliquet leo cursus.</p>
+        <hr>
 
+        <h4>Leave a Comment:</h4>
+        <form action="/action_page.php" role="form">
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="3" cols="50" id="comment" name="text"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <br><br>
+      </div>
+    </div> <!--Row-->
+    <!--End Posts Section-->
+  </div> <!--Container-->
+  <footer class="container-fluid">
+  <p>Footer Text</p>
+  </footer>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-	</body>
-
+</body>
 
 </html>
